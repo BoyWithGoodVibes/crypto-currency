@@ -1,0 +1,85 @@
+.coinpage-table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0px;
+	border-top: 1px solid #fff;
+	padding-top: 30px;
+}
+
+.coinpage-table-header-item {
+	border-bottom: 1px solid rgb(180, 180, 180);
+	cursor: pointer;
+	-webkit-transition: 0.2s ease-in-out;
+		-o-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+				transition: 0.2s ease-in-out;
+}
+
+.coinpage-table-body-item:nth-child(1) {
+	max-width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.coinpage-table-header-item:hover {
+	color: rgb(165, 165, 165);
+}
+
+.coinpage-table-header-item:nth-child(2):hover {
+	color: inherit;
+}
+
+.coinpage-table-header-item,
+.coinpage-table-body-item {
+	padding: 11px 9px;
+	position: relative;
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+.left-aligned {
+	text-align: left;
+	white-space: nowrap;
+}
+
+.coinpage-table-body-row-button td {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.coinpage-button {
+	outline: none;
+	border: none;
+	color: #fff;
+	padding: 15px 20px;
+	background: #242a42;
+	border-radius: 30px;
+	cursor: pointer;
+	-webkit-transition: .2s linear;
+		-o-transition: .2s linear;
+			-moz-transition: .2s linear;
+				transition: .2s linear;
+}
+
+.coinpage-button:hover {
+	background: #3c5079;
+}
+
+@media (max-width: 767px) {
+	.coinpage-table-header-item:nth-child(5),
+	.coinpage-table-body-item:nth-child(5), 
+	.coinpage-table-header-item:nth-child(2), 
+	.coinpage-table-body-item:nth-child(2) {
+		display: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.coinpage-table-header-item:nth-child(3), 
+	.coinpage-table-body-item:nth-child(3) {
+		display: none;
+	}
+}

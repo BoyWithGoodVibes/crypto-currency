@@ -1,0 +1,299 @@
+//$primary-color: rgb(25, 46, 71);
+$primary-color: #2a3956;
+
+.crypto-list {
+	background: $primary-color;
+}
+
+.crypto-list-table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0px;
+	font-size: 16px;
+}
+
+.crypto-list-table-header-item {
+	border-bottom: 1px solid rgb(37, 70, 107);
+	cursor: pointer;
+	-webkit-transition: 0.2s ease-in-out;
+		-o-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+				transition: 0.2s ease-in-out;
+}
+
+.crypto-list-table-header-item:hover {
+	color: rgb(155, 155, 155);
+}
+
+.crypto-list-table-body .crypto-list-table-body-row {
+	-webkit-transition: 0.2s ease-in-out;
+		-o-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+				transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.crypto-list-table-body .crypto-list-table-body-row:hover {
+	background: #3c5079;
+}
+
+.crypto-list-table-body-row:last-child td,
+.crypto-list-table-header-row:last-child td {
+	border-bottom: none;
+}
+
+.crypto-list-table-header-item,
+.crypto-list-table-body-item {
+	padding: 11px 9px;
+	position: relative;
+}
+
+.crypto-list-table-body-item:last-child,
+.crypto-list-table-header-item:last-child {
+	padding-right: 17px;
+}
+
+.crypto-list-table-body-item {
+	border-top: 1px solid rgb(180, 180, 180);
+	text-align: right;
+}
+
+.crypto-list-green-text {
+	color: rgb(24, 198, 131);
+}
+
+.crypto-list-red-text {
+	color: rgb(244, 67, 54);
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+.left-aligned {
+	//width: 180px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.center-aligned {
+	text-align: center;
+}
+
+.table-icon {
+	width: 35px;
+	height: 35px;
+}
+
+.table-name {
+	display: inline-block;
+	margin-left: 10px;
+	color: inherit;
+	text-decoration: underline;
+}
+
+.table-name-title {
+	-webkit-transition: .2s ease-in-out;
+		-o-transition: .2s ease-in-out;
+			-moz-transition: .2s ease-in-out;
+				transition: .2s ease-in-out;
+}
+
+.table-name:hover .table-name-title {
+	color: rgb(185, 185, 185);
+}
+
+.table-name-symbol {
+	font-size: 0.7em;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.table-name-title,
+.table-name-symbol {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 190px;
+}
+
+.header-icon {
+	position: absolute;
+	top: 17px;
+	font-size: 14px;
+}
+
+.increase {
+	-webkit-animation: background-increase 0.5s ease-in-out 0s normal;
+		-moz-animation: background-increase 0.5s ease-in-out 0s normal;
+			-o-animation: background-increase 0.5s ease-in-out 0s normal;
+				animation: background-increase 0.5s ease-in-out 0s normal;
+}
+
+.decrease {
+	-webkit-animation: background-decrease 0.5s ease-in-out 0s normal;
+		-moz-animation: background-decrease 0.5s ease-in-out 0s normal;
+			-o-animation: background-decrease 0.5s ease-in-out 0s normal;
+				animation: background-decrease 0.5s ease-in-out 0s normal;
+}
+
+@-webkit-keyframes background-increase {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(24, 198, 131, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+@-moz-keyframes background-increase {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(24, 198, 131, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+@-o-keyframes background-increase {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(24, 198, 131, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+@keyframes background-increase {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(24, 198, 131, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+
+// -----------------------------------------------------------------------------------------------------------------
+
+@-webkit-keyframes background-decrease {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(244, 67, 54, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+@-moz-keyframes background-decrease {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(244, 67, 54, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+@-o-keyframes background-decrease {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(244, 67, 54, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+@keyframes background-decrease {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: rgba(244, 67, 54, 0.29);
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+
+@media (max-width: 1251px) {
+	.crypto-list-table-body-item:nth-child(5),
+	.crypto-list-table-body-item:nth-child(6),
+	.crypto-list-table-header-item:nth-child(5),
+	.crypto-list-table-header-item:nth-child(6) {
+		display: none;
+	}
+}
+
+@media (max-width: 1042px) {
+	.crypto-list-table-body-item:nth-child(7),
+	.crypto-list-table-header-item:nth-child(7) {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.crypto-list-table-body-item:nth-child(8),
+	.crypto-list-table-header-item:nth-child(8),
+	.crypto-list-table-body-item:nth-child(4),
+	.crypto-list-table-header-item:nth-child(4) {
+		display: none;
+	}
+
+	.crypto-list-table-header-item,
+	.crypto-list-table-body-item {
+		padding: 0;
+	}
+
+	.crypto-list-table-header-item,
+	.crypto-list-table-body-item {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.crypto-list-table-body-item:first-child,
+	.crypto-list-table-header-item:first-child {
+		padding-right: 4px;
+	}
+
+	.crypto-list-table-header-item:nth-child(3),
+	.crypto-list-table-body-item:nth-child(3) {
+		padding-right: 15px;
+	}
+
+	.header-icon {
+		position: absolute;
+		top: 11px;
+	}
+}
+
+@media (max-width: 550px) {
+	.crypto-list-table-body-item:nth-child(1):not(.crypto-list-dropdown-td),
+	.crypto-list-table-header-item:nth-child(1) {
+		display: none;
+	}
+
+	.crypto-list-table-body-item:nth-child(2),
+	.crypto-list-table-header-item:nth-child(2) {
+		padding-left: 15px;
+	}
+}
+
+@media (max-width: 350px) {
+	.table-name-title,
+	.table-name-symbol {
+		max-width: 90px;
+	}
+}

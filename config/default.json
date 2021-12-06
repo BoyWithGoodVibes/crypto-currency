@@ -1,0 +1,5 @@
+{
+	"assetsUrl": "https://api.coincap.io/v2/assets",
+	"chartUrl": "https://api.coinstats.app/public/v1/charts?",
+	"assetsToken": "f2b643f1-58f8-47d2-b0ce-2b2ade93b1d7"
+}

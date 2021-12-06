@@ -1,0 +1,38 @@
+//$primary-color: rgb(25, 46, 71);
+$primary-color: #2a3956;
+
+.app {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-wrapper {
+	padding-top: 100px;
+}
+
+@media (min-width: 1921px) {
+	.app {
+		width: 1600px;
+	}
+	
+}
+
+@media (max-width: 1251px) {
+	.app {
+		width: 992px
+	}
+}
+
+@media (max-width: 1042px) {
+	.app {
+		width: 750px
+	}
+}
+
+@media (max-width: 767px) {
+	.app {
+		width: 100%
+	}
+}
+
